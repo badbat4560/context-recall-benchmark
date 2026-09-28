@@ -112,3 +112,7 @@ No private service addresses, credentials, user conversations, or production con
 ## License
 
 MIT; see LICENSE.
+
+## Article and discussion
+
+[Hashnode article](https://badbat4560.hashnode.dev/smaller-context-recoverable-history-inside-an-agent-memory-handoff) · [DEV mirror](https://dev.to/badbat4560/smaller-context-recoverable-history-inside-an-agent-memory-handoff-404j) · [Telegram discussion](https://t.me/badbat4560/12) · [Instagram](https://www.instagram.com/badbat4560/)
