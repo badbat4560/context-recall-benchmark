@@ -1,0 +1,854 @@
+{
+  "scope": "synthetic protected-tool-history; real planner/models/embeddings/SQL/recall functions; local Qdrant, temporary PostgreSQL tables; direct fixed-query recall, not autonomous agent or HTTP auth test",
+  "cases": [
+    {
+      "id": "endpoint",
+      "question": "What is the production IP address of Project Cedar?",
+      "expected": "192.0.2.41",
+      "retrieved_ordinals": [
+        0,
+        36,
+        48,
+        44,
+        24
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.208,
+      "recalled_context_chars": 5759,
+      "full": {
+        "answer": "192.0.2.41",
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 8067,
+          "total_tokens": 8078,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.503,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1125,
+          "total_tokens": 1127,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.836,
+        "correct": false
+      },
+      "recall": {
+        "answer": "192.0.2.41",
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 1820,
+          "total_tokens": 1831,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 1.157,
+        "correct": true
+      }
+    },
+    {
+      "id": "port",
+      "question": "Which port serves metrics for Project Birch?",
+      "expected": "9187",
+      "retrieved_ordinals": [
+        4,
+        36,
+        12,
+        8,
+        0
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.221,
+      "recalled_context_chars": 6743,
+      "full": {
+        "answer": "9187",
+        "usage": {
+          "completion_tokens": 5,
+          "prompt_tokens": 8065,
+          "total_tokens": 8070,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.738,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1123,
+          "total_tokens": 1125,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.825,
+        "correct": false
+      },
+      "recall": {
+        "answer": "9187",
+        "usage": {
+          "completion_tokens": 5,
+          "prompt_tokens": 2005,
+          "total_tokens": 2010,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.809,
+        "correct": true
+      }
+    },
+    {
+      "id": "command",
+      "question": "Give the exact recovery command for Project Maple.",
+      "expected": "systemctl restart maple-worker.service",
+      "retrieved_ordinals": [
+        8,
+        48,
+        12,
+        44,
+        36
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.203,
+      "recalled_context_chars": 5802,
+      "full": {
+        "answer": "systemctl restart maple-worker.service",
+        "usage": {
+          "completion_tokens": 7,
+          "prompt_tokens": 8066,
+          "total_tokens": 8073,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.541,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1124,
+          "total_tokens": 1126,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.812,
+        "correct": false
+      },
+      "recall": {
+        "answer": "systemctl restart maple-worker.service",
+        "usage": {
+          "completion_tokens": 7,
+          "prompt_tokens": 1873,
+          "total_tokens": 1880,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 1.03,
+        "correct": true
+      }
+    },
+    {
+      "id": "hash",
+      "question": "What is the full accepted artifact SHA-256 for Project Willow?",
+      "expected": "b794a823b794a823b794a823b794a823b794a823b794a823b794a823b794a823",
+      "retrieved_ordinals": [
+        12,
+        48,
+        36,
+        0,
+        8
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.207,
+      "recalled_context_chars": 5798,
+      "full": {
+        "answer": "b794a823b794a823b794a823b794a823b794a823b794a823b794a823b794a823",
+        "usage": {
+          "completion_tokens": 65,
+          "prompt_tokens": 8072,
+          "total_tokens": 8137,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 3.24,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1130,
+          "total_tokens": 1132,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.884,
+        "correct": false
+      },
+      "recall": {
+        "answer": "b794a823b794a823b794a823b794a823b794a823b794a823b794a823b794a823",
+        "usage": {
+          "completion_tokens": 65,
+          "prompt_tokens": 1887,
+          "total_tokens": 1952,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 1.461,
+        "correct": true
+      }
+    },
+    {
+      "id": "owner",
+      "question": "Who owns escalation for Project Aspen?",
+      "expected": "Mira Chen",
+      "retrieved_ordinals": [
+        16,
+        48,
+        36,
+        8,
+        0
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.2,
+      "recalled_context_chars": 5734,
+      "full": {
+        "answer": "Mira Chen",
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 8064,
+          "total_tokens": 8068,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.883,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1122,
+          "total_tokens": 1124,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.661,
+        "correct": false
+      },
+      "recall": {
+        "answer": "Mira Chen",
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 1813,
+          "total_tokens": 1817,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 13.753,
+        "correct": true
+      }
+    },
+    {
+      "id": "decision",
+      "question": "Which database was selected as the authoritative record for Project Hazel?",
+      "expected": "PostgreSQL",
+      "retrieved_ordinals": [
+        20,
+        0,
+        40,
+        16,
+        44
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.223,
+      "recalled_context_chars": 6728,
+      "full": {
+        "answer": "PostgreSQL",
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 8069,
+          "total_tokens": 8072,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.714,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1127,
+          "total_tokens": 1129,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.709,
+        "correct": false
+      },
+      "recall": {
+        "answer": "PostgreSQL",
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 1928,
+          "total_tokens": 1931,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.929,
+        "correct": true
+      }
+    },
+    {
+      "id": "negation",
+      "question": "Is a production restart permitted for Project Juniper? Answer yes or no.",
+      "expected": "no",
+      "retrieved_ordinals": [
+        24,
+        48,
+        0,
+        8,
+        44
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.202,
+      "recalled_context_chars": 5753,
+      "full": {
+        "answer": "no",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 8072,
+          "total_tokens": 8074,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 1.804,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1130,
+          "total_tokens": 1132,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 1.804,
+        "correct": false
+      },
+      "recall": {
+        "answer": "no",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1803,
+          "total_tokens": 1805,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.922,
+        "correct": true
+      }
+    },
+    {
+      "id": "ru",
+      "question": "Какой текущий лимит очереди у проекта Рябина? Только число.",
+      "expected": "731",
+      "retrieved_ordinals": [
+        28,
+        48,
+        18,
+        19,
+        31
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.205,
+      "recalled_context_chars": 5627,
+      "full": {
+        "answer": "731",
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 8071,
+          "total_tokens": 8075,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.324,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1129,
+          "total_tokens": 1131,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.752,
+        "correct": false
+      },
+      "recall": {
+        "answer": "731",
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 1815,
+          "total_tokens": 1819,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.862,
+        "correct": true
+      }
+    },
+    {
+      "id": "update",
+      "question": "What is the current retry limit for Project Alder?",
+      "expected": "7",
+      "retrieved_ordinals": [
+        48,
+        28,
+        32,
+        8,
+        0
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.21,
+      "recalled_context_chars": 5714,
+      "full": {
+        "answer": "7",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 8068,
+          "total_tokens": 8070,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.682,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1126,
+          "total_tokens": 1128,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.73,
+        "correct": false
+      },
+      "recall": {
+        "answer": "7",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1806,
+          "total_tokens": 1808,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.914,
+        "correct": true
+      }
+    },
+    {
+      "id": "conflict",
+      "question": "What is the production IP address of Project Elm, excluding staging?",
+      "expected": "192.0.2.81",
+      "retrieved_ordinals": [
+        36,
+        0,
+        48,
+        12,
+        8
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.201,
+      "recalled_context_chars": 5798,
+      "full": {
+        "answer": "192.0.2.81",
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 8070,
+          "total_tokens": 8081,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.571,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1128,
+          "total_tokens": 1130,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.792,
+        "correct": false
+      },
+      "recall": {
+        "answer": "192.0.2.81",
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 1885,
+          "total_tokens": 1896,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.958,
+        "correct": true
+      }
+    },
+    {
+      "id": "relation",
+      "question": "What must finish before the index rebuild for Project Spruce?",
+      "expected": "schema validation",
+      "retrieved_ordinals": [
+        40,
+        48,
+        8,
+        28,
+        15
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.204,
+      "recalled_context_chars": 5717,
+      "full": {
+        "answer": "schema validation",
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 8069,
+          "total_tokens": 8072,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.313,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1127,
+          "total_tokens": 1129,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.747,
+        "correct": false
+      },
+      "recall": {
+        "answer": "schema validation",
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 1804,
+          "total_tokens": 1807,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 1.069,
+        "correct": true
+      }
+    },
+    {
+      "id": "unknown",
+      "question": "What is the maintenance password for Project Pine?",
+      "expected": "UNKNOWN",
+      "retrieved_ordinals": [
+        44,
+        48,
+        12,
+        0,
+        8
+      ],
+      "evidence_at_5": true,
+      "retrieval_seconds": 0.206,
+      "recalled_context_chars": 5771,
+      "full": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 8066,
+          "total_tokens": 8068,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 2.642,
+        "correct": true
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1124,
+          "total_tokens": 1126,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.763,
+        "correct": true
+      },
+      "recall": {
+        "answer": "UNKNOWN",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1857,
+          "total_tokens": 1859,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "seconds": 0.829,
+        "correct": true
+      }
+    }
+  ],
+  "storage": {
+    "segments": 49,
+    "manifest_rows": 49,
+    "exact_roundtrips": 49,
+    "counts": {
+      "delete": 0,
+      "keep": 49,
+      "compress": 0
+    },
+    "source_chars": 49897,
+    "handoff_chars": 1329,
+    "ingest_and_exact_check_seconds": 4.402
+  },
+  "summary": {
+    "full": 12,
+    "handoff_only": 1,
+    "recall": 12,
+    "evidence_at_5": 12,
+    "n": 12
+  },
+  "provenance": "Recorded original deployment run; private serving alias redacted. This is not an output of the portable reference implementation."
+}

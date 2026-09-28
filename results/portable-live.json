@@ -1,0 +1,876 @@
+{
+  "scope": "portable-reference-v1; SQLite exact store, exhaustive cosine search, no reranker; deterministic handoff; KEEP only; fixed query, not autonomous agent",
+  "models": {
+    "chat": "private-serving-alias-redacted",
+    "embedding": "private-serving-alias-redacted"
+  },
+  "corpus_sha256": "ca330b8e2eb2701713a017fbb2755ed1fb4c5267cf3af5d6f3c847538329176c",
+  "handoff": "Context has been externalized. This is a navigation hint, not the complete record.\nManifest: 5a03b920d47e55c5e8ea0ea5a94afcec1b9a67da9e8da77442b1002f3d468f9e\nRetained segments: 49\nUse semantic recall to retrieve relevant exact records. Later revisions supersede earlier ones.\nFirst-record excerpt: Project Cedar production endpoint is 192.0.2.41.\nThe synthetic inspection collected diagnostic information and recorded the result for later review. The synthetic inspection collected diagnostic information and recorded the result for later review. The synthetic inspection collected diagnostic information and recorded the result for later review. The synthetic inspection collected diagnostic information and recorded the result for later review. The synthetic inspection collected diagnostic information and recorded the result for later review. The synthetic inspection collected diagnostic infor",
+  "cases": [
+    {
+      "id": "endpoint",
+      "question": "What is the production IP address of Project Cedar?",
+      "expected": "192.0.2.41",
+      "evidence_ordinal": 0,
+      "retrieved_ordinals": [
+        0,
+        36,
+        24,
+        44,
+        48
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "192.0.2.41",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 8067,
+          "total_tokens": 8078,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 2.6872511620167643
+      },
+      "handoff_only": {
+        "answer": "192.0.2.41",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 451,
+          "total_tokens": 462,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.5750293569872156
+      },
+      "recall": {
+        "answer": "192.0.2.41",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 1146,
+          "total_tokens": 1157,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.7850141950184479
+      }
+    },
+    {
+      "id": "port",
+      "question": "Which port serves metrics for Project Birch?",
+      "expected": "9187",
+      "evidence_ordinal": 4,
+      "retrieved_ordinals": [
+        4,
+        36,
+        0,
+        12,
+        8
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "9187",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 5,
+          "prompt_tokens": 8065,
+          "total_tokens": 8070,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 2.6649198930244893
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 449,
+          "total_tokens": 451,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.5236379019916058
+      },
+      "recall": {
+        "answer": "9187",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 5,
+          "prompt_tokens": 1331,
+          "total_tokens": 1336,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.7695237400475889
+      }
+    },
+    {
+      "id": "command",
+      "question": "Give the exact recovery command for Project Maple.",
+      "expected": "systemctl restart maple-worker.service",
+      "evidence_ordinal": 8,
+      "retrieved_ordinals": [
+        8,
+        48,
+        36,
+        12,
+        44
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "systemctl restart maple-worker.service",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 7,
+          "prompt_tokens": 8066,
+          "total_tokens": 8073,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 2.754401562968269
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 450,
+          "total_tokens": 452,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.48451141198165715
+      },
+      "recall": {
+        "answer": "systemctl restart maple-worker.service",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 7,
+          "prompt_tokens": 1199,
+          "total_tokens": 1206,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.7945741600124165
+      }
+    },
+    {
+      "id": "hash",
+      "question": "What is the full accepted artifact SHA-256 for Project Willow?",
+      "expected": "b794a823b794a823b794a823b794a823b794a823b794a823b794a823b794a823",
+      "evidence_ordinal": 12,
+      "retrieved_ordinals": [
+        12,
+        36,
+        48,
+        0,
+        8
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "b794a823b794a823b794a823b794a823b794a823b794a823b794a823b794a823",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 65,
+          "prompt_tokens": 8072,
+          "total_tokens": 8137,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 3.319914771011099
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 456,
+          "total_tokens": 458,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.6718757569324225
+      },
+      "recall": {
+        "answer": "b794a823b794a823b794a823b794a823b794a823b794a823b794a823b794a823",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 65,
+          "prompt_tokens": 1213,
+          "total_tokens": 1278,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 1.2764188409782946
+      }
+    },
+    {
+      "id": "owner",
+      "question": "Who owns escalation for Project Aspen?",
+      "expected": "Mira Chen",
+      "evidence_ordinal": 16,
+      "retrieved_ordinals": [
+        16,
+        48,
+        0,
+        8,
+        36
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "Mira Chen",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 8064,
+          "total_tokens": 8068,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 2.5482632369967178
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 448,
+          "total_tokens": 450,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.5926669728942215
+      },
+      "recall": {
+        "answer": "Mira Chen",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 1139,
+          "total_tokens": 1143,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.8736438259948045
+      }
+    },
+    {
+      "id": "decision",
+      "question": "Which database was selected as the authoritative record for Project Hazel?",
+      "expected": "PostgreSQL",
+      "evidence_ordinal": 20,
+      "retrieved_ordinals": [
+        20,
+        44,
+        40,
+        16,
+        0
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "PostgreSQL",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 8069,
+          "total_tokens": 8072,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 14.460532744997181
+      },
+      "handoff_only": {
+        "answer": "\n\nUNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 172,
+          "prompt_tokens": 533,
+          "total_tokens": 705,
+          "completion_tokens_details": {
+            "reasoning_tokens": 168
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 2.8164981410373002
+      },
+      "recall": {
+        "answer": "PostgreSQL",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 1254,
+          "total_tokens": 1257,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.4947079720441252
+      }
+    },
+    {
+      "id": "negation",
+      "question": "Is a production restart permitted for Project Juniper? Answer yes or no.",
+      "expected": "no",
+      "evidence_ordinal": 24,
+      "retrieved_ordinals": [
+        24,
+        0,
+        48,
+        8,
+        44
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "no",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 8072,
+          "total_tokens": 8074,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 1.525924799963832
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 456,
+          "total_tokens": 458,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.3578623119974509
+      },
+      "recall": {
+        "answer": "no",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1129,
+          "total_tokens": 1131,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.49269448092672974
+      }
+    },
+    {
+      "id": "ru",
+      "question": "Какой текущий лимит очереди у проекта Рябина? Только число.",
+      "expected": "731",
+      "evidence_ordinal": 28,
+      "retrieved_ordinals": [
+        28,
+        48,
+        19,
+        27,
+        31
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "731",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 8071,
+          "total_tokens": 8075,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 3.0231460509821773
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 455,
+          "total_tokens": 457,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.5862844759831205
+      },
+      "recall": {
+        "answer": "731",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 1141,
+          "total_tokens": 1145,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.7600372959859669
+      }
+    },
+    {
+      "id": "update",
+      "question": "What is the current retry limit for Project Alder?",
+      "expected": "7",
+      "evidence_ordinal": 48,
+      "retrieved_ordinals": [
+        48,
+        32,
+        28,
+        0,
+        8
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "7",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 8068,
+          "total_tokens": 8070,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 2.894351180992089
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 452,
+          "total_tokens": 454,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.6325764479115605
+      },
+      "recall": {
+        "answer": "7",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1132,
+          "total_tokens": 1134,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.8452297090552747
+      }
+    },
+    {
+      "id": "conflict",
+      "question": "What is the production IP address of Project Elm, excluding staging?",
+      "expected": "192.0.2.81",
+      "evidence_ordinal": 36,
+      "retrieved_ordinals": [
+        36,
+        0,
+        48,
+        8,
+        12
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "192.0.2.81",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 8070,
+          "total_tokens": 8081,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 2.6706389450700954
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 454,
+          "total_tokens": 456,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.5128404700662941
+      },
+      "recall": {
+        "answer": "192.0.2.81",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 1211,
+          "total_tokens": 1222,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.8195427150931209
+      }
+    },
+    {
+      "id": "relation",
+      "question": "What must finish before the index rebuild for Project Spruce?",
+      "expected": "schema validation",
+      "evidence_ordinal": 40,
+      "retrieved_ordinals": [
+        40,
+        48,
+        8,
+        28,
+        19
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "schema validation",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 8069,
+          "total_tokens": 8072,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 2.66362913697958
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 453,
+          "total_tokens": 455,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.49294937297236174
+      },
+      "recall": {
+        "answer": "schema validation",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 1130,
+          "total_tokens": 1133,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.8483354200143367
+      }
+    },
+    {
+      "id": "unknown",
+      "question": "What is the maintenance password for Project Pine?",
+      "expected": "UNKNOWN",
+      "evidence_ordinal": 44,
+      "retrieved_ordinals": [
+        44,
+        0,
+        8,
+        12,
+        48
+      ],
+      "evidence_at_5": true,
+      "full": {
+        "answer": "UNKNOWN",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 8066,
+          "total_tokens": 8068,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 2.5135785919846967
+      },
+      "handoff_only": {
+        "answer": "UNKNOWN",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 450,
+          "total_tokens": 452,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.5642910440219566
+      },
+      "recall": {
+        "answer": "UNKNOWN",
+        "correct": true,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 1183,
+          "total_tokens": 1185,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "created_cache_tokens": 0
+          }
+        },
+        "model": "private-serving-alias-redacted",
+        "system_fingerprint": "vllm-0.1.dev20073+g8e685d198-e6b315a0",
+        "seconds": 0.7604620730271563
+      }
+    }
+  ],
+  "summary": {
+    "n": 12,
+    "full": 12,
+    "handoff_only": 2,
+    "recall": 12,
+    "evidence_at_5": 12,
+    "prompt_tokens": {
+      "full": 96819,
+      "recall": 14208
+    },
+    "prompt_token_reduction_pct": 85.32519443497661
+  },
+  "provenance": "Live portable runner result. Serving aliases redacted; exact model revisions not captured. Answers and usage preserved."
+}
